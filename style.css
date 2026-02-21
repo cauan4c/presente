@@ -17,10 +17,9 @@ body{
 }
 
 .hero{
-    position: relative;
+    position: relative; /* MUITO IMPORTANTE */
     width: 100%;
-    height: 60vh; /* melhor que 334px para mobile */
-    min-height: 320px;
+    height: 465px;
     background-image: url('midia/capa.jpeg');
     background-size: cover;
     background-position: center;
@@ -28,6 +27,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 0px 0px 30px 30px;
     color: white;
 }
 
@@ -41,21 +41,22 @@ body{
 .conteudo{
     position: relative;
     z-index: 2;
-    padding: 0 20px;
     text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.532);
 }
 
 .foto{
-    width: 160px;
-    height: 160px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 h1{
-    font-size: 28px;
+    font-size: 42px;
     font-weight: 600;
+    margin-bottom: 30px;
+    text-shadow: 10px 10px 10px black;
 }
 
 h1 span{
@@ -64,34 +65,81 @@ h1 span{
 
 .music-player{
     position: absolute;
-    bottom: -40px;
+    bottom: -80px; /* controla quanto ele desce */
     left: 50%;
     transform: translateX(-50%);
-    background: #1e6dfc;
-    padding: 18px;
-    border-radius: 20px;
-    width: 90%; /* RESPONSIVO */
-    max-width: 320px;
+    background: #006FFF;
+    padding: 5px;
+    border-radius: 17px;
+    width: 300px;
+    z-index: 3;
+}
+.music-info{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.music-info > img {
+    width: 70px;
+    height: 70px; 
+    align-items: left;
+    display: flex;
+    border-radius: 15px;
 }
 
-.music-player p{
+.music-player > h2{
     margin:0px;
     margin-bottom: 10px;
     font-weight: 500;
+    display: flex;
 }
 
-audio{
-    width: 100%;
+.player {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.2);
+  padding: 15px;
+  border-radius: 16px;
+  margin: 8px;
 }
 
-.music-player p{
-    margin-bottom: 10px;
-    font-weight: 500;
+button {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+}
+
+input[type="range"] {
+  cursor: pointer;
+}
+
+.volume-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#volumeSlider {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  width: 80px;
+  display: none;
+
+  cursor: pointer;
+}
+
+/* Classe para mostrar */
+.volume-container.active #volumeSlider {
+  display: block;
 }
 
 main{
-    padding-top: 100px;
+    margin-top: 90px;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
 }
