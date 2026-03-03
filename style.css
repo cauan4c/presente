@@ -50,7 +50,7 @@ h1{
     font-size: 42px;
     font-weight: 600;
     margin-bottom: 30px;
-    text-shadow: 10px 10px 10px black;
+    text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.532);
 }
 
 h1 span{
@@ -136,5 +136,34 @@ input[type="range"] {
 
 main{
     margin-top: 90px;
+    padding: 10px;
     text-align: center;
+}
+
+footer{
+    background-color: #006FFF;
+    color: white;
+}
+.vale-presente{
+    margin: auto;
+    height: 50vh;
+    width:50vh;
+    display: flex;
+    flex-direction: column;  /* deixa um embaixo do outro */
+    align-items: center;     /* centraliza horizontalmente */
+    justify-content: center; /* centraliza verticalmente */
+}
+
+.vale-btn{
+    background-color: #00BFFF;
+    width: 200px;
+    margin: 10px 0;
+    color: white;                /* cor do texto */
+    padding: 12px 25px;          /* espaço interno */
+    border: none;                /* tira borda padrão */
+    border-radius: 10px;         /* bordas arredondadas */
+    font-size: 16px;
+    cursor: pointer;             /* muda cursor */
+    transition: 0.3s;
+
 }
