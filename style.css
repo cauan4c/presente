@@ -177,11 +177,11 @@ footer{
     margin: auto;
     max-width: 500px;
     width: 90%;
-    min-height: 70vh;
+    padding: 40px 0;
     display: flex;
-    flex-direction: column;  /* deixa um embaixo do outro */
-    align-items: center;     /* centraliza horizontalmente */
-    justify-content: center; /* centraliza verticalmente */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .vale-btn{
