@@ -56,6 +56,10 @@ h1{
 h1 span{
     font-weight: 700;
 }
+p{
+    font-size: 14px;
+    text-align: justify;
+}
 
 .music-player{
     position: absolute;
@@ -146,8 +150,8 @@ footer{
 }
 .vale-presente{
     margin: auto;
-    height: 50vh;
-    width:50vh;
+    height: 70vh;
+    width:70vh;
     display: flex;
     flex-direction: column;  /* deixa um embaixo do outro */
     align-items: center;     /* centraliza horizontalmente */
