@@ -28,6 +28,7 @@ h1{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body{
@@ -47,6 +48,7 @@ body{
     text-align: center;
     border-radius: 0px 0px 30px 30px;
     color: white;
+    box-shadow: rgba(0, 0, 0, 0.441) 5px 3px 5px;
 }
 
 .overlay{
@@ -177,7 +179,16 @@ main{
 footer{
     background-color: #006FFF;
     color: white;
+    border-radius: 12px 12px 0px 0px;
 }
+
+   a{
+    color:#00BFFF;
+    font-weight: bold;
+}
+  a:hover{
+    text-decoration: underline;
+  }
 .vale-presente{
     margin: auto;
     max-width: 500px;
@@ -200,5 +211,5 @@ footer{
     font-size: 16px;
     cursor: pointer;             /* muda cursor */
     transition: 0.3s;
-
+    box-shadow: rgba(0, 0, 0, 0.227) 5px 5px 5px;
 }
